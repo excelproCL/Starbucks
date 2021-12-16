@@ -36,9 +36,9 @@
       
       </div>
       <ul class="thumb">
-        <li><img src="images/thumb1.png" onclick="imgSlider('images/img1.png')"></li>
-        <li><img src="images/thumb2.png" onclick="imgSlider('images/img2.png')"></li>
-        <li><img src="images/thumb3.png" onclick="imgSlider('images/img3.png')"></li>
+        <li><img src="images/thumb1.png" onclick="imgSlider('images/img1.png'); changeCircleColor('#017143')"></li>
+        <li><img src="images/thumb2.png" onclick="imgSlider('images/img2.png'); changeCircleColor('#eb7495')"></li>
+        <li><img src="images/thumb3.png" onclick="imgSlider('images/img3.png'); changeCircleColor('#d752b1')"></li>
       </ul>
 
       <ul class="sci">
@@ -55,9 +55,10 @@
         document.querySelector('.starbucks').src=anything;
       }
       
-      function miFunc() {
-        document.querySelector("starbucks").style.backgroundColor = "red"
-        alert('Se ha dado clic al botón!');
+      function changeCircleColor(color) {
+        const circle =document.querySelector('.circle');
+        circle.style.backgroundColor=color;
+        circle.style.borderColor = "green purple";
       }
     </script>
   </body>
