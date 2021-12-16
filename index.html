@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Starbuck Website Landing Page</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <section>
+      <div class="circle"></div>  
+      <header>
+        <a href="#" ><img src="images/logo.png" class="logo"></a>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">What's New</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        </header>
+
+      <div class="content">
+        
+        <div class="textBox">
+          
+          <h2>It´s not just Coffe<br>It's <span>Starbuck</span></h2>
+          
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ab quasi iste, magnam, similique quibusdam eveniet ipsum quas repellat temporibus autem? Beatae iusto nulla molestiae incidunt amet quis, pariatur natus.</p>
+          <a href="#">Learn More</a>
+          
+        </div>
+                
+        <div class="imgBox">
+          <img src="images/img1.png" class="starbucks" > 
+        </div>
+      
+      </div>
+      <ul class="thumb">
+        <li><img src="images/thumb1.png" onclick="imgSlider('images/img1.png')"></li>
+        <li><img src="images/thumb2.png" onclick="imgSlider('images/img2.png')"></li>
+        <li><img src="images/thumb3.png" onclick="imgSlider('images/img3.png')"></li>
+      </ul>
+
+      <ul class="sci">
+        <li><a href="#"><img src="images/facebook.png"></a> </li>
+        <li><a href="#"><img src="images/twitter.png"></a> </li>
+        <li><a href="#"><img src="images/instagram.png"></a> </li>
+        
+      </ul>
+    
+    </section>
+
+    <script type="text/javascript">
+      function  imgSlider (anything){
+        document.querySelector('.starbucks').src=anything;
+      }
+      
+      function miFunc() {
+        document.querySelector("starbucks").style.backgroundColor = "red"
+        alert('Se ha dado clic al botón!');
+      }
+    </script>
+  </body>
+</html>
